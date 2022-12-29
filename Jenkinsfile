@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git "https://github.com/vimalsh/project1-php.git"
+                git url: 'https://github.com/vimalsh/project1-php.git', branch: 'main'
             }
         }
         stage('Build'){
