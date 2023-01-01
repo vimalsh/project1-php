@@ -6,11 +6,6 @@ pipeline {
 	}
 
     stages {
-        stage('Clean UP'){
-            steps {
-                deleteDir()
-            }
-        }
         stage('Git Clone') {
             steps {
                 git url: 'https://github.com/vimalsh/project1-php.git', branch: 'main'
